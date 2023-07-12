@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    
+    <link rel="stylesheet" href="css/alarm.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  />
+</head>
+<body>
+ 
+    
+    <main>
+      <div class="phone container-3">
+        <img class="samsung" src="assets/images/Phone_.png" alt="">
+        <div class="phone_menu">
+          <nav>
+            <div class="navbar">
+                <div class="clock">
+                    <span id="time" class="time"></span>
+                </div>
+                <div class="navbar_right">
+                    <div class="contact">
+                        <img src="./assets/images/cell_wifi_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                        <img src="./assets/images/signal_cellular_connected_no_internet_4_bar_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                    </div>    
+                    <div class="battery">battery</div>
+    
+                </div>
+            </div>
+        </nav>
+        <section id="alarm-clock">
+                <div class="wrapper">
+                  <div class="timer-display">00:00:00</div>
+                  <div class="container-3 alarmClock">
+                    <div class="inputs">
+                      <input
+                        type="number"
+                        id="hourInput"
+                        placeholder="00"
+                        min="0"
+                        max="23"
+                      />
+                      <input
+                        type="number"
+                        id="minuteInput"
+                        placeholder="00"
+                        min="0"
+                        max="59"
+                      />
+                    </div>
+                    <button id="set">Add Alarm</button>
+                    <div class="activeAlarms"></div>
+                  </div>
+                </div>   
+          </section>
+        </div>
+        </div>
+</main>
+        
+        <!-- <script src="script.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/alarm.js"></script>
+
+</body>
+</html>
